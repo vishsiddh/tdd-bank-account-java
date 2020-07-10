@@ -1,15 +1,19 @@
 package org.xpdojo.bank;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AccountTest {
 
     @Test
-	@Disabled
-    public void depositAnAmountToIncreaseTheBalance() {
-        assertThat("your first test").isBlank();
+    //Add amount in the account
+    public void depositAnAmountToIncreaseTheBalance()
+
+    {
+        Account intAccount = new Account();
+        assertEquals(10000, intAccount.addMoney(10000.00));
+
     }
 }
+
