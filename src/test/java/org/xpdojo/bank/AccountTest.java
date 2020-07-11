@@ -19,7 +19,15 @@ public class AccountTest {
     public void withdrawAnAmountToDecreaseTheBalance()
     {
         Account intAccount = new Account();
-        assertEquals(10000, intAccount.withDrawMoney(10000.00));
+        assertEquals(9500, intAccount.withDrawMoney(10000.00));
     }
+    @Test
+    //Transfer money from the account
+    public void transferMoney()
+    {
+        Account intAccount = new Account();
+        assertEquals(500.00, intAccount.transferMoney(500.00));
+    }
+
 }
 
